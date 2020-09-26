@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>SlideShow | Mnex</title>
+  </head>
+  <body>
+    <div class="kiwekea-mpanguso">
+      <div class="kipanguso fifia">
+        <div class="hatua">1/3</div>
+        <img src="./images/morogoro.jpg" alt="1/3" style="width: 100%" />
+        <div class="maelezo">Maelezo ya Mwanzo</div>
+      </div>
+      <div class="kipanguso fifia">
+        <div class="hatua">2/3</div>
+        <img src="./images/kigoma.jpg" alt="2/3" style="width: 100%" />
+        <div class="maelezo">Maelezo ya Pili</div>
+      </div>
+      <div class="kipanguso fifia">
+        <div class="hatua">3/3</div>
+        <img src="./images/iringa.jpg" alt="3/3" style="width: 100%" />
+        <div class="maelezo">Maelezo ya Tatu</div>
+      </div>
+
+      <!-- Next and Previous Buttons -->
+      <a class="iliyopita" onclick="leteNyingine(-1)">&#10094;</a>
+      <a class="inayofuata" onclick="leteNyingine(1)">&#10095;</a>
+
+      <!-- Viduara -->
+      <div class="viduara">
+        <span class="dot" onclick="mpangusoHuu(1)"></span>
+        <span class="dot" onclick="mpangusoHuu(2)"></span>
+        <span class="dot" onclick="mpangusoHuu(3)"></span>
+      </div>
+    </div>
+    <script src="./js/picha-mpanguso.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "slidshow",
+  "version": "1.0.0",
+  "description": "mpito wa picha baada ya muda ama mtumiaji akibonya kitufe",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o dist/css/ --recursive"
+  },
+  "author": "Mnex",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

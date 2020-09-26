@@ -1,0 +1,91 @@
+.active {
+  opacity: 0.3; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: white; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.kiwekea-mpanguso {
+  position: relative;
+  width: 100%;
+  height: 50vh; }
+  .kiwekea-mpanguso:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .kiwekea-mpanguso .inayofuata,
+  .kiwekea-mpanguso .iliyopita {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: center;
+    color: black;
+    border-radius: 50%;
+    text-align: center; }
+    .kiwekea-mpanguso .inayofuata:hover,
+    .kiwekea-mpanguso .iliyopita:hover {
+      cursor: pointer; }
+  .kiwekea-mpanguso .iliyopita {
+    left: 0; }
+  .kiwekea-mpanguso .kipanguso {
+    position: relative;
+    display: none;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    animation: fifia;
+    animation-duration: 0s; }
+    .kiwekea-mpanguso .kipanguso .hatua {
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 1s;
+      transition-delay: 1s; }
+    .kiwekea-mpanguso .kipanguso .maelezo {
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 1s;
+      transition-delay: 1s; }
+
+@keyframes fifia {
+  from {
+    opacity: 0.7; }
+  to {
+    opacity: 1; } }
+
+.viduara {
+  text-align: center;
+  position: static;
+  bottom: 0; }
+  .viduara .dot {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #d60606;
+    display: inline-block; }
+    .viduara .dot:hover {
+      background: #333;
+      cursor: pointer; }
